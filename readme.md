@@ -34,27 +34,33 @@ This guide will focus on local deployment of the kafka environment. To deploy on
 	i. **Deploy Zookeeper**
 
 	`kubectl create -f zookeeper-deployment.yaml`
+	
 	`kubectl create -f zookeeper-ip-service.yaml`
 
 	ii. **Deploy Kafka**
 
 	`kubectl create -f kafka/kafka-deployment.yaml`
+	
 	`kubectl create -f kafka/kafka-ip-service.yaml`
 
 	iii. **Deploy Schema Registry**
 
 	`kubectl create -f schema-registry/schema-registry-deployment.yaml`
+	
 	`kubectl create -f schema-registry/schema-registry-ip-service.yaml`
 
 	iv. **Deploy Kafka Connect**
 
 	`docker build -t kafka-connect-custom:1.0.0 kafka-connect`
+	
 	`kubectl create -f kafka-connect/kafka-connect-deployment.yaml`
+	
 	`kubectl create -f kafka-connect/kafka-connect-ip-service.yaml`
 
   
 
 3. Make applications accessible outside of the Kubernetes cluster
+
 	i. Kafka - `kubectl port-forward services/kafka-cluster 9092:9092`
 	
 	ii. Schema Registry - `kubectl port-forward service/kafka-schema-registry 8081:8081`
