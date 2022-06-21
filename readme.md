@@ -56,8 +56,11 @@ This guide will focus on local deployment of the kafka environment. To deploy on
 
 3. Make applications accessible outside of the Kubernetes cluster
 	i. Kafka - `kubectl port-forward services/kafka-cluster 9092:9092`
+	
 	ii. Schema Registry - `kubectl port-forward service/kafka-schema-registry 8081:8081`
+	
 	iii. Kafka Connect - `kubectl port-forward service/kafka-connect 8083:8083`
+	
 	iv. Zookeeper - `kubectl port-forward service/zookeeper 2181:2181`
 
   
