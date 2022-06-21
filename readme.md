@@ -34,13 +34,11 @@ This guide will focus on local deployment of the kafka environment. To deploy on
 	i. **Deploy Zookeeper**
 
 	`kubectl create -f zookeeper-deployment.yaml`
-
 	`kubectl create -f zookeeper-ip-service.yaml`
 
 	ii. **Deploy Kafka**
 
 	`kubectl create -f kafka/kafka-deployment.yaml`
-
 	`kubectl create -f kafka/kafka-ip-service.yaml`
 
 	iii. **Deploy Schema Registry**
