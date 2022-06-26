@@ -12,7 +12,6 @@ The requirements to deploy this kafka environment are:
 
 * [Kubectl](https://kubernetes.io/docs/tasks/tools/) to operate the kubernetes cluster.
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
 ## Installation Guide
 
